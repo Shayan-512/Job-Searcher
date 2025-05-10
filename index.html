@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Career Crystal Ball</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>AI Career Crystal Ball</h1>
+        <p>Discover future-proof careers in the age of AI</p>
+    </header>
+
+    <div class="quiz-container">
+        <div id="step1" class="step active">
+            <h2>What are your top skills?</h2>
+            <div class="skills-grid">
+                <button class="skill-btn" data-skill="programming">Programming</button>
+                <button class="skill-btn" data-skill="design">Design</button>
+                <button class="skill-btn" data-skill="writing">Writing</button>
+                <button class="skill-btn" data-skill="analysis">Data Analysis</button>
+                <button class="skill-btn" data-skill="management">Management</button>
+                <button class="skill-btn" data-skill="creative">Creative Arts</button>
+            </div>
+            <button id="next1" class="next-btn">Next →</button>
+        </div>
+
+        <div id="step2" class="step">
+            <h2>What industry are you in?</h2>
+            <select id="industry">
+                <option value="tech">Technology</option>
+                <option value="healthcare">Healthcare</option>
+                <option value="finance">Finance</option>
+                <option value="education">Education</option>
+                <option value="creative">Creative</option>
+                <option value="other">Other</option>
+            </select>
+            <button id="next2" class="next-btn">Next →</button>
+        </div>
+
+        <div id="step3" class="step">
+            <h2>Where are you located?</h2>
+            <input type="text" id="location" placeholder="Country or City">
+            <button id="get-results" class="next-btn">See My Career Future</button>
+        </div>
+
+        <div id="results" class="step">
+            <h2>Your Career Forecast</h2>
+            <div class="result-category safe">
+                <h3>✅ Safe Careers</h3>
+                <ul id="safe-careers"></ul>
+            </div>
+            <div class="result-category risky">
+                <h3>⚠️ At-Risk Jobs</h3>
+                <ul id="risky-careers"></ul>
+            </div>
+            <div class="result-category emerging">
+                <h3>📈 Emerging Fields</h3>
+                <ul id="emerging-careers"></ul>
+            </div>
+            <button id="restart-btn" class="next-btn">Start Over</button>
+        </div>
+    </div>
+    <footer>
+        <div class="contact-info">
+            <a href="mailto:shayankhaan1930@gmail.com" class="contact-link">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+            </a>
+            <a href="https://instagram.com/_shayan.n_05" target="_blank" class="contact-link">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            </a>
+
+        </div>
+    </footer>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
